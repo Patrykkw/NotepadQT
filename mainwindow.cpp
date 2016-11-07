@@ -50,7 +50,7 @@ void MainWindow::on_actionSave_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
-    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), QString(), tr("Text Files (*.txt);; C++ Files (*.cpp *.h)"));
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), QString(), tr("Text Files (*.txt);; C++ Files (*.cpp *.h);; Java Files (*.jar)"));
 
     if(!fileName.isEmpty())
     {
