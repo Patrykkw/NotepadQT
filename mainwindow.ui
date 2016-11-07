@@ -57,7 +57,16 @@
     <addaction name="actionSave"/>
     <addaction name="actionQuit"/>
    </widget>
+   <widget class="QMenu" name="menuTips">
+    <property name="title">
+     <string>Tips</string>
+    </property>
+    <addaction name="actionCopy_Ctrl_c"/>
+    <addaction name="actionPaste_Ctrl_v"/>
+    <addaction name="actionSelect_All_Ctrl_a"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuTips"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -81,6 +90,21 @@
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionCopy_Ctrl_c">
+   <property name="text">
+    <string>Copy                                Ctrl + c</string>
+   </property>
+  </action>
+  <action name="actionPaste_Ctrl_v">
+   <property name="text">
+    <string>Paste                                Ctrl + v</string>
+   </property>
+  </action>
+  <action name="actionSelect_All_Ctrl_a">
+   <property name="text">
+    <string>Select All                         Ctrl + a</string>
    </property>
   </action>
  </widget>

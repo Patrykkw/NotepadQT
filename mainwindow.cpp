@@ -3,6 +3,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QLineEdit>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -29,7 +30,7 @@ void MainWindow::on_actionQuit_triggered()
 
 void MainWindow::on_actionSave_triggered()
 {
-    QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), QString(), tr("TextFiles (*.txt);; C++ Files (*.cpp *.h)"));
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), QString(), tr("TextFiles (*.txt);; C++ Files (*.cpp *.h);; Java Files (*.jar)"));
 
     if(!fileName.isEmpty())
     {
@@ -64,3 +65,4 @@ void MainWindow::on_actionOpen_triggered()
     }
 
 }
+
